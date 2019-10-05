@@ -10,6 +10,8 @@ updateData:{[]
 
 // step 2, create candlestick binned data.
 candles:{[]
+	// negate sells
+	update size: 0.0-size from `trades where side like "seller";
 	select date: time,o,h,l,c,v,close from select o:first price,h:max price,l:min price,c:last price,v:sum size,close:last price by 00:15:00.000000 xbar time from trades};
 
 

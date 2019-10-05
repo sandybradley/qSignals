@@ -29,9 +29,13 @@ Example with Bitcoin USD market. Start monitor with:
 
 \l qmonitorBTCUSD.q
 
+Start a new q instance and load signals:
+
 \l qsignals.q
 
-View signals against price action. Load qstudio and select each signal to view graphically.
+Start qstudio. Connect to 5011, plot price action vs signals. E.g.
+
+select time, close, sma20, sma50 from data; 
 
 # Donate for development
 

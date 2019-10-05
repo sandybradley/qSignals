@@ -11,6 +11,7 @@ assetList:("USDT";"USDC";"USD");
 //shrimpy
 exchangeInfo: .j.k .Q.hg `$":https://dev-api.shrimpy.io/v1/list_exchanges";
 save `exchangeInfo;
+// drop fake volume exchanges
 exchanges:0N! `hitbtc`okex`huobiglobal`huobi`kucoin`bitmart _ `$exchangeInfo`exchange;
 save `exchanges;
 pairs: exchanges!();

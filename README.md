@@ -1,39 +1,37 @@
-# QMonitor
+# QSignals
 
-Real-time trade volumes for all major crypto currencies, on all major exchanges, written in KDB+.
+Real-time trade signals for all major crypto currencies, on all major exchanges, written in KDB+.
 
-This script subscribes to all bitcoin market trades on the following exchanges:
+This script produces common signal analysis in real time, using qmonitor. The following signals are generated. Note that anyone trading off these signals will need to customise for the current market conditions. My advice is to use qstudio to visually view signals and price action, in order to customise for your own needs. 
 
-- Binance
-- Bittrex
-- Kucoin
-- Coinbasepro
-- Poloniex
-- Kraken
-- Bibox
-- Gemini
-- Huobi
-- Hitbtc
-- Bitmart
-- Bitstamp
-- Okex
-- Bitfinex
+- Candlesticks
+- Directional volume
+- Simple moving average cross-over
+- Momentum
+- Volatility
+- RSI
+- PSAR
+- Bollinger bands
+- MACD
+- ATR
+- KST
+- ADX
 
-Real-time logging in the trades table enables real-time signals and triggers. Please contact me directly to request custom signals.
+Real-time logging in the signals table enables real-time triggers for trading with minimal latency.
 
 Pre-requisites:
 
 KDB+ (https://kx.com/connect-with-us/download/)
 
-Start with:
+qstudio (http://www.timestored.com/qstudio/)
 
-\l qmonitor.q
+Example with Bitcoin USD market. Start monitor with:
 
-View trades table
+\l qmonitorBTCUSD.q
 
-http://localhost:5010/
+\l qsignals.q
 
-WARNING - live trade monitoring consumes alot of bandwidth and logging takes alot of storage. Please monitor and adjust accordingly.
+View signals against price action. Load qstudio and select each signal to view graphically.
 
 # Donate for development
 

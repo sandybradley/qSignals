@@ -1,8 +1,8 @@
 # QSignals
 
-Real-time trade signals for all major crypto currencies, on all major exchanges, written in KDB+.
+Real-time trade signals for bitcoin to fiat markets on major spot exchanges, written in KDB+.
 
-This script produces common signal analysis in real time, using qmonitor. The following signals are generated. Note that anyone trading off these signals will need to customise for the current market conditions. My advice is to use qstudio to visually view signals and price action, in order to customise for your own needs. 
+This script produces common signal analysis in real time, using qmonitor (https://github.com/sandybradley/qMonitor). The following signals are generated. Note that anyone trading off these signals will need to customise for the current market conditions. My advice is to use qstudio to visually view signals and price action, in order to customise for your own needs. 
 
 - Candlesticks
 - Directional volume
@@ -27,7 +27,7 @@ qstudio (http://www.timestored.com/qstudio/)
 
 Example with Bitcoin USD market. Start monitor with:
 
-\l qmonitorBTCUSD.q
+\l qmonitor.q
 
 Start a new q instance and load signals:
 

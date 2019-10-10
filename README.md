@@ -55,8 +55,6 @@ EOS - binancecleos Memo: 103117718
 
 # Recommended links
 
-Shrimpy's API saved me alot of time with this script  - https://shrimpy.io/referral?r=gQMHqFcZP
-
 Getting started - Coinbase - https://www.coinbase.com/join/bradle_6r
 
 Portfolio balance - Binance - www.binance.com/en/register?ref=LTUMGDDC

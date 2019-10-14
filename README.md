@@ -37,7 +37,7 @@ Start qstudio. Connect to 5011, plot price action vs signals. E.g.
 
 select time, close, sma20, sma50 from data; 
 
-# Donate for development
+# Karma jar
 
 BTC - 112eMCQJUkUz7kvxDSFCGf1nnFJZ61CE4W
 
